@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/test/Code/GitCode/AnyDecoder/build",
+  "command": "/bin/g++-9    -g   -o CMakeFiles/AnyDecoder.dir/main.cpp.o -c /home/test/Code/GitCode/AnyDecoder/main.cpp",
+  "file": "/home/test/Code/GitCode/AnyDecoder/main.cpp"
+}
+]
