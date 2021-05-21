@@ -1,7 +1,7 @@
 [
 {
-  "directory": "/home/test/Code/GitCode/AnyDecoder/build",
-  "command": "/bin/g++-9    -g   -o CMakeFiles/AnyDecoder.dir/main.cpp.o -c /home/test/Code/GitCode/AnyDecoder/main.cpp",
-  "file": "/home/test/Code/GitCode/AnyDecoder/main.cpp"
+  "directory": "D:/Source/MyGithub/AnyDecoder/build",
+  "command": "C:\\PROGRA~2\\MICROS~3\\2019\\PROFES~1\\VC\\Tools\\Llvm\\bin\\clang.exe -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\AnyDecoder.dir\\main.cpp.obj -c D:\\Source\\MyGithub\\AnyDecoder\\main.cpp",
+  "file": "D:/Source/MyGithub/AnyDecoder/main.cpp"
 }
 ]
