@@ -1,5 +1,7 @@
 #include "../include/DecoderFactory.h"
 
+#include <algorithm>  
+#include <string.h>
 
 DecoderFactory::DecoderFactory()
 {
@@ -47,11 +49,23 @@ void DecoderFactory::setDecoderParam(TypeList* pTypeList)
             m_pOutObj->setFileName(pTypeList->m_strOutputFileName);
         }
 
-        m_pAnyDecoder = new AnyDecoder();
+        std::transform(pTypeList->m_strType.begin(), pTypeList->m_strType.end(), pTypeList->m_strType.begin(), ::tolower);
+
+        if(0==strcmp(pTypeList->m_strType.c_str(),"url"))
+        {
+            if(true == pTypeList->m_bIsDecoder)
+            {
+                m_pAnyDecoder = new URLDecoder();
+            }
+            else
+            {
+                m_pAnyDecoder = new URLEncoder();
+            }
+            
+        }
 
         m_pAnyDecoder->setInputStr(strInputData);
         m_pAnyDecoder->setOutObj(m_pOutObj);
-
 
 
     }

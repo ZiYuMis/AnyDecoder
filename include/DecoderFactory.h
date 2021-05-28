@@ -3,6 +3,8 @@
 
 #include "TypeList.h"
 #include "AnyDecoder.h"
+#include "URLEncoder.h"
+#include "URLDecoder.h"
 #include "OutObj.h"
 
 #include <sstream>
